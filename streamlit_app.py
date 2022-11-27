@@ -16,6 +16,7 @@ In the meantime, below is an example of what you can do with just a few lines of
 """
 
 with st.echo(code_location='below'):
+    st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Major_League_Baseball_logo.svg/1200px-Major_League_Baseball_logo.svg.png")
     total_points = st.slider("Number of points in spiral", 1, 5000, 2000)
     num_turns = st.slider("Number of turns in spiral", 1, 100, 9)
 
