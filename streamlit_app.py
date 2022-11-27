@@ -10,6 +10,8 @@ import streamlit as st
 
 with st.echo(code_location='below'):
     st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Major_League_Baseball_logo.svg/1200px-Major_League_Baseball_logo.svg.png")
+    pages = ["Home", "Player Exploration", "Predictive Model"]
+    st.sidebar.selectbox("Select a page:", pages)
     st.markdown("Select type of player:")
     st.radio(" ", ["Batter", "Pitcher"], horizontal=True)
     players = ["Mike Trout", "Aaron Judge", "Mookie Betts", "Jose Altuve"]
