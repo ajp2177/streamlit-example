@@ -18,4 +18,4 @@ with st.echo(code_location='below'):
         players = ["Mike Trout", "Aaron Judge", "Mookie Betts", "Jose Altuve"]
         st.selectbox("Player:", players)
     elif choice == "Predictive Model":
-        
+        print("hello")
