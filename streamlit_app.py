@@ -11,7 +11,8 @@ import streamlit as st
 with st.echo(code_location='below'):
     st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Major_League_Baseball_logo.svg/1200px-Major_League_Baseball_logo.svg.png")
     st.markdown("Select type of player:")
-    st.radio(" ", ["Batter", "Pitcher"])
+    st.radio(" ", ["Batter", "Pitcher"], horizontal=True)
+    st.selectbox("Player:", "Players")
     
     
     total_points = st.slider("Number of points in spiral", 1, 5000, 2000)
