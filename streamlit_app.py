@@ -12,7 +12,8 @@ with st.echo(code_location='below'):
     st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Major_League_Baseball_logo.svg/1200px-Major_League_Baseball_logo.svg.png")
     st.markdown("Select type of player:")
     st.radio(" ", ["Batter", "Pitcher"], horizontal=True)
-    st.selectbox("Player:", "[Players]")
+    players = ["Mike Trout", "Aaron Judge", "Mookie Betts", "Jose Altuve"]
+    st.selectbox("Player:", players)
     
     
     total_points = st.slider("Number of points in spiral", 1, 5000, 2000)
